@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Learn programming, AI, and technology through clear lessons and hands-on projects with LearnFlow.">
+    <title>LearnFlow | Learn Skills. Build Your Future.</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <svg class="icon-library" aria-hidden="true" focusable="false">
+      <symbol id="icon-cap" viewBox="0 0 24 24">
+        <path d="m2 9 10-5 10 5-10 5L2 9Z"></path>
+        <path d="M6 11v5c3.5 2.7 8.5 2.7 12 0v-5M22 9v6"></path>
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m8 5-6 7 6 7m8-14 6 7-6 7m-2-17-4 20"></path>
+      </symbol>
+      <symbol id="icon-brain" viewBox="0 0 24 24">
+        <path d="M12 18V5a3 3 0 0 0-5.8-1A3.5 3.5 0 0 0 4 10a3.5 3.5 0 0 0 1 6.7A3.5 3.5 0 0 0 12 18Zm0-8a3 3 0 0 1 5.8-1A3.5 3.5 0 0 1 20 15a3.5 3.5 0 0 1-1 6.7A3.5 3.5 0 0 1 12 20"></path>
+        <path d="M8 7h1m-4 7h2m8-9h1m3 7h-2m-5 6h2"></path>
+      </symbol>
+      <symbol id="icon-terminal" viewBox="0 0 24 24">
+        <path d="m4 17 6-6-6-6m8 14h8"></path>
+      </symbol>
+      <symbol id="icon-chart" viewBox="0 0 24 24">
+        <path d="M3 3v18h18M7 14l4-4 4 3 6-7M7 18v-2m4 2v-5m4 5v-3m4 3v-8"></path>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="M12 7v5l3 2"></path>
+      </symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24">
+        <path d="M12 7v14m0-14C9 4 5 4 2 6v14c3-2 7-2 10 1m0-14c3-3 7-3 10-1v14c-3-2-7-2-10 1"></path>
+      </symbol>
+      <symbol id="icon-project" viewBox="0 0 24 24">
+        <path d="M3 6h7l2 2h9v11H3z"></path>
+        <path d="m10 12-2 2 2 2m4-4 2 2-2 2"></path>
+      </symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+        <path d="M16 3v4M8 3v4M3 10h18m-9 3v3l2 1"></path>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+        <path d="m3 7 9 6 9-6"></path>
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-6-6 6 6-6 6"></path>
+      </symbol>
+    </svg>
+
+    <header class="site-header" id="home">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="LearnFlow home">
+          <svg class="brand-icon" aria-hidden="true"><use href="#icon-cap"></use></svg>
+          <span>LearnFlow</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="main-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a class="nav-link is-active" href="#home">Home</a>
+          <a class="nav-link" href="#courses">Courses</a>
+          <a class="nav-link" href="#benefits">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <a class="button button-primary header-cta" href="#courses">Get Started</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Your next chapter starts here</p>
+            <h1 id="hero-title">Learn Skills. <span>Build Your Future.</span></h1>
+            <p class="hero-description">Learn programming, AI, and technology through clear lessons and hands-on projects. Build practical skills, one step at a time.</p>
+            <a class="button button-primary" href="#courses">
+              Explore Courses
+              <svg class="button-icon" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+          </div>
+          <div class="hero-art">
+            <svg class="learning-illustration" viewBox="0 0 564 392" role="img" aria-labelledby="illustration-title illustration-description">
+              <title id="illustration-title">A student learning with a laptop</title>
+              <desc id="illustration-description">A student studies at a desk with a laptop, books, and a small plant.</desc>
+              <rect x="0" y="0" width="564" height="392" rx="16" fill="#eff5ff"></rect>
+              <g stroke="#14243b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M99 254h367l-18 12H82l17-12Z" fill="#fff"></path>
+                <path d="M99 266v45h10v-45m328 0v45h10v-45" fill="#dbeafe"></path>
+                <path d="M79 311h20m328 0h20" fill="none"></path>
+                <path d="M112 238h39l19 17h-45z" fill="#fff"></path>
+                <path d="M118 228h40l15 10h-43z" fill="#2563eb"></path>
+                <path d="M99 206c-10-12-11-25-3-31 13 1 21 13 19 29m-8-18 9 11m4-8c0-15 7-24 18-25 7 8 4 21-7 30m1-14-4 14" fill="#bfdbfe"></path>
+                <path d="M101 220h34l-4 18h-26z" fill="#fff"></path>
+                <path d="M99 220h38" fill="none"></path>
+                <path d="M181 160c0-27 18-47 44-47s43 19 43 47v78h-91z" fill="#2563eb"></path>
+                <path d="M203 127c7 11 20 16 34 14m-53 34c4 18 13 29 28 33m43-36 11 42" fill="none"></path>
+                <path d="M205 102c-5-18 5-39 25-42 17-11 38-1 43 14 15 2 21 18 14 31-4 7-11 10-20 8l-10-8-20 8c-15 5-28 1-32-11Z" fill="#14243b"></path>
+                <path d="M214 101c1 24 14 39 34 39 15 0 25-8 30-20l-8-10v-13l-14-5-22 8-20-5Z" fill="#f3c7a6"></path>
+                <path d="M252 113h1m16 0h1m-10 12 7 2" fill="none"></path>
+                <path d="M223 144c7 9 18 13 31 12" fill="none"></path>
+                <path d="M259 170h94l-13 68h-95l14-68Z" fill="#14243b"></path>
+                <path d="M266 177h77l-10 53h-78l11-53Z" fill="#eff5ff"></path>
+                <path d="M278 190h38m-42 9h23m-27 9h43m-47 9h22" fill="none" stroke="#2563eb"></path>
+                <path d="M244 238h110l27 10H218l26-10Z" fill="#fff"></path>
+                <path d="M218 248h163" fill="none"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses section-pad" id="courses" aria-labelledby="courses-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="courses-title">Popular Courses</h2>
+            <p>Find your starting point. Build skills that take you further.</p>
+          </div>
+          <div class="course-grid">
+            <article class="course-card">
+              <div class="course-media">
+                <svg class="course-icon" aria-hidden="true"><use href="#icon-code"></use></svg>
+                <p class="course-category">Development</p>
+              </div>
+              <div class="course-content">
+                <h3>Web Development</h3>
+                <p class="course-description">Build responsive websites with HTML, CSS, and JavaScript.</p>
+                <div class="course-meta">
+                  <span class="difficulty">Beginner</span>
+                  <span class="duration"><svg aria-hidden="true"><use href="#icon-clock"></use></svg>8 weeks</span>
+                </div>
+                <a class="course-link" href="#contact">View Course <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="course-media">
+                <svg class="course-icon" aria-hidden="true"><use href="#icon-brain"></use></svg>
+                <p class="course-category">Artificial Intelligence</p>
+              </div>
+              <div class="course-content">
+                <h3>AI Fundamentals</h3>
+                <p class="course-description">Explore how AI works and bring intelligent ideas to life.</p>
+                <div class="course-meta">
+                  <span class="difficulty">Intermediate</span>
+                  <span class="duration"><svg aria-hidden="true"><use href="#icon-clock"></use></svg>6 weeks</span>
+                </div>
+                <a class="course-link" href="#contact">View Course <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="course-media">
+                <svg class="course-icon" aria-hidden="true"><use href="#icon-terminal"></use></svg>
+                <p class="course-category">Programming</p>
+              </div>
+              <div class="course-content">
+                <h3>Python Programming</h3>
+                <p class="course-description">Learn Python essentials and solve real-world problems.</p>
+                <div class="course-meta">
+                  <span class="difficulty">Beginner</span>
+                  <span class="duration"><svg aria-hidden="true"><use href="#icon-clock"></use></svg>8 weeks</span>
+                </div>
+                <a class="course-link" href="#contact">View Course <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="course-media">
+                <svg class="course-icon" aria-hidden="true"><use href="#icon-chart"></use></svg>
+                <p class="course-category">Data &amp; Insights</p>
+              </div>
+              <div class="course-content">
+                <h3>Data Analytics</h3>
+                <p class="course-description">Turn raw data into clear insights and meaningful decisions.</p>
+                <div class="course-meta">
+                  <span class="difficulty">Intermediate</span>
+                  <span class="duration"><svg aria-hidden="true"><use href="#icon-clock"></use></svg>6 weeks</span>
+                </div>
+                <a class="course-link" href="#contact">View Course <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits section-pad" id="benefits" aria-labelledby="benefits-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="benefits-title">Why Choose LearnFlow</h2>
+            <p>A simpler way to learn. A practical way to grow.</p>
+          </div>
+          <div class="benefit-grid">
+            <article class="benefit-item">
+              <span class="benefit-icon"><svg aria-hidden="true"><use href="#icon-book"></use></svg></span>
+              <h3>Structured Learning</h3>
+              <p>Follow clear, step-by-step lessons that help you build a strong foundation.</p>
+            </article>
+            <article class="benefit-item">
+              <span class="benefit-icon"><svg aria-hidden="true"><use href="#icon-project"></use></svg></span>
+              <h3>Practical Projects</h3>
+              <p>Put your knowledge into practice with projects you can add to your portfolio.</p>
+            </article>
+            <article class="benefit-item">
+              <span class="benefit-icon"><svg aria-hidden="true"><use href="#icon-calendar"></use></svg></span>
+              <h3>Flexible Learning</h3>
+              <p>Learn at your own pace and fit your next skill around your everyday life.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-inner">
+          <div class="contact-intro">
+            <h2 id="contact-title">Get in Touch</h2>
+            <p>Have a question about a course or where to start? We're here to help you take the next step.</p>
+            <a class="email-link" href="mailto:hello@learnflow.edu">
+              <svg aria-hidden="true"><use href="#icon-mail"></use></svg>
+              hello@learnflow.edu
+            </a>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button class="button button-primary" type="submit">Send Message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home" aria-label="LearnFlow home">
+          <svg class="brand-icon" aria-hidden="true"><use href="#icon-cap"></use></svg>
+          <span>LearnFlow</span>
+        </a>
+        <p class="copyright">© 2026 LearnFlow. All rights reserved.</p>
+        <p class="footer-tagline">A little learning. A brighter future.</p>
+      </div>
+    </footer>
+  </body>
+</html>
